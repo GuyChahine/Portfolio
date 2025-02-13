@@ -253,8 +253,8 @@ export let AboutData = new AboutModel({
     }),
   ],
   links: [
-    new LinkModel({ url: "http://linkedin.com", icon: FaLinkedin }),
-    new LinkModel({ url: "http://github.com", icon: FaGithub }),
+    new LinkModel({ url: "https://www.linkedin.com/in/guychahine/", icon: FaLinkedin }),
+    new LinkModel({ url: "https://github.com/GuyChahine", icon: FaGithub }),
     new LinkModel({ url: "mailto:guychahine@gmail.com", icon: MdMailOutline }),
   ],
 });
