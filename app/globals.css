@@ -3,19 +3,91 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --primary: 255 255 255;
+  --secondary: 3 7 18;
+  --error: 255 0 0;
+  --success: 0 201 81;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+.dark {
+  --primary: 3 7 18;
+  --secondary: 255 255 255;
+  --error: 255 0 0;
+  --success: 0 201 81;
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  @apply bg-primary text-secondary
+}
+
+.menu_link {
+  @apply text-secondary/70 hover:text-secondary
+}
+
+.menu_separator {
+  @apply hidden opacity-70 lg:flex
+}
+
+h2 {
+  @apply text-5xl font-bold
+}
+
+h5 {
+  @apply text-lg font-medium
+}
+
+.footer_title {
+  @apply mb-4
+}
+
+.parent_keywords {
+  @apply flex flex-row flex-wrap gap-1
+}
+
+.keywords {
+  @apply flex flex-row bg-secondary/10 py-0.5 px-3 rounded-md items-center space-x-2 text-sm font-normal
+}
+
+.margins {
+  @apply max-w-screen-2xl mx-auto px-8 py-12 max-lg:max-w-screen-md
+}
+
+.about_titles {
+  @apply flex space-x-4 items-center text-3xl font-bold mb-8
+}
+
+.h4_titles {
+  @apply flex text-xl items-center space-x-4 font-medium
+}
+
+.card {
+  @apply flex mb-6 lg:mr-6 rounded-md p-6 bg-primary dark:bg-secondary/5 shadow-lg
+}
+
+.buttons {
+  @apply py-2 px-4 rounded-md shadow-md bg-secondary dark:bg-secondary/90 hover:bg-secondary/85 dark:hover:bg-secondary text-primary font-medium
+}
+
+.project_filters {
+  @apply text-3xl shrink-0 menu_link text-left box-content p-1 rounded-md
+}
+
+.contact_form_divs {
+  @apply flex flex-col space-y-2
+}
+
+.contact_form_divs label {
+  @apply font-medium
+}
+
+.contact_form_divs input, .contact_form_divs textarea {
+  @apply bg-primary dark:bg-secondary/5 rounded-md px-4 py-1.5 focus:outline-none border-[1px] border-primary dark:border-secondary/5 focus:border-secondary dark:focus:border-secondary
+}
+
+.home_buttons {
+  @apply !py-2.5 !px-6 cursor-pointer
+}
+
+.home_titles {
+  @apply text-4xl
 }
