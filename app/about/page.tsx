@@ -8,11 +8,9 @@ import SectionContainer from "@/components/oposite_gradient_container";
 import { TiBusinessCard } from "react-icons/ti";
 import { FaCode } from "react-icons/fa";
 import { IoBriefcaseOutline } from "react-icons/io5";
-import { PiCertificate } from "react-icons/pi";
 import { LuGraduationCap } from "react-icons/lu";
 import { MdOutlineInterests } from "react-icons/md";
 import SkillsCards from "@/components/skills_cards";
-import Link from "next/link";
 
 function AboutIntroduction() {
   return (
@@ -109,42 +107,42 @@ function WorkExperiences() {
   );
 }
 
-function Certifications() {
-  return (
-    <div className="margins">
-      <div className="about_titles">
-        <PiCertificate />
-        <h3>Certifications</h3>
-      </div>
-      <div className="grid grid-cols-3 max-2xl:grid-cols-2 max-lg:grid-cols-1">
-        {AboutData.certifications.map((certification, i) => (
-          <Link
-            key={i}
-            href={certification.link}
-            target="_blank"
-            className="card flex-row items-center space-x-6"
-          >
-            <div className="size-[80px] relative shrink-0">
-              <Image
-                src={certification.image_path}
-                alt={certification.name}
-                style={{ objectFit: "cover" }}
-                fill
-              ></Image>
-            </div>
-            <div className="">
-              <h4 className="h4_titles mb-1">{certification.name}</h4>
-              <p className="">{certification.company}</p>
-              <p className="text-secondary/70 text-sm">
-                Issued: {certification.issued_date}
-              </p>
-            </div>
-          </Link>
-        ))}
-      </div>
-    </div>
-  );
-}
+// function Certifications() {
+//   return (
+//     <div className="margins">
+//       <div className="about_titles">
+//         <PiCertificate />
+//         <h3>Certifications</h3>
+//       </div>
+//       <div className="grid grid-cols-3 max-2xl:grid-cols-2 max-lg:grid-cols-1">
+//         {AboutData.certifications.map((certification, i) => (
+//           <Link
+//             key={i}
+//             href={certification.link}
+//             target="_blank"
+//             className="card flex-row items-center space-x-6"
+//           >
+//             <div className="size-[80px] relative shrink-0">
+//               <Image
+//                 src={certification.image_path}
+//                 alt={certification.name}
+//                 style={{ objectFit: "cover" }}
+//                 fill
+//               ></Image>
+//             </div>
+//             <div className="">
+//               <h4 className="h4_titles mb-1">{certification.name}</h4>
+//               <p className="">{certification.company}</p>
+//               <p className="text-secondary/70 text-sm">
+//                 Issued: {certification.issued_date}
+//               </p>
+//             </div>
+//           </Link>
+//         ))}
+//       </div>
+//     </div>
+//   );
+// }
 
 function Degrees() {
   return (
