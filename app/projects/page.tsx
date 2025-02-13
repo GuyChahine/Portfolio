@@ -40,7 +40,7 @@ function KeywordsFilter({
     setSelectedKeyword([]);
   };
   return (
-    <div className="flex m-auto lg:max-w-screen-lg items-center space-x-4">
+    <div className="flex m-auto items-center space-x-4">
       {selectedKeyword.length == 0 ? (
         <IoFilterCircleOutline className="project_filters !text-secondary" />
       ) : (
@@ -114,7 +114,12 @@ function ProjectsShowcase() {
                 </div>
                 <div className="space-x-4">
                   {project.project_buttons.map((project_button, j) => (
-                    <Link key={j} href={project_button.link} target="_blank" className="buttons">
+                    <Link
+                      key={j}
+                      href={project_button.link}
+                      target="_blank"
+                      className="buttons"
+                    >
                       {project_button.name}
                     </Link>
                   ))}

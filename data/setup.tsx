@@ -285,7 +285,7 @@ export let ProjectsData = new ProjectsModel({
       project_buttons: [
         new Button({
           name: "Github",
-          link: "http://github.com",
+          link: "https://github.com/GuyChahine/AutoRAG",
         }),
       ],
     }),
@@ -407,7 +407,11 @@ export let ProjectsData = new ProjectsModel({
       project_buttons: [
         new Button({
           name: "Github",
-          link: "http://github.com",
+          link: "https://github.com/GuyChahine/Portfolio",
+        }),
+        new Button({
+          name: "Live Demo",
+          link: "https://guychahine.com",
         }),
       ],
     }),
@@ -436,7 +440,7 @@ export let HomeData = new HomeModel({
 
 export let ContactData = new ContactModel({
   page_description:
-    "Have a question or want to get in touch? Let’s discuss how AI can transform your business! Fill out the form, and I’ll get back to you.",
+    "Have a question or want to get in touch? Fill out the form, and I’ll get back to you as soon as possible.",
 });
 
 export let uniqueProjectsKeywords = Array.from(
