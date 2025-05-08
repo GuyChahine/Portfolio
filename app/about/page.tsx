@@ -21,7 +21,7 @@ function AboutIntroduction() {
           alt={AboutData.name}
           style={{ objectFit: "cover" }}
           fill
-          className="rounded-full shadow-2xl shadow-secondary/30 dark:shadow-secondary/5"
+          className="rounded-full shadow-2xl shadow-secondary/30 dark:shadow-secondary/5 bg-secondary/10"
         ></Image>
       </div>
       <div className="flex flex-col space-y-3">

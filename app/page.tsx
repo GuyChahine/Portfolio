@@ -21,7 +21,7 @@ function HomeIntroduction() {
           alt={AboutData.name}
           style={{ objectFit: "cover" }}
           fill
-          className="rounded-full shadow-2xl shadow-secondary/30 dark:shadow-secondary/5"
+          className="rounded-full shadow-2xl shadow-secondary/30 dark:shadow-secondary/5 bg-secondary/10"
         ></Image>
       </div>
       <h1 className="text-7xl max-lg:text-5xl max-md:text-4xl font-bold !mt-8">

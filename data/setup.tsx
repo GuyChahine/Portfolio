@@ -30,7 +30,7 @@ import { MdOutlineWeb } from "react-icons/md";
 
 export let AboutData = new AboutModel({
   name: "Guy Chahine",
-  image_path: "/images/profile_picture_example.jpg",
+  image_path: "/images/profile_picture.png",
   email: "guychahine@gmail.com",
   job_title: "AI Research Scientist & MLOps Engineer",
   qualifications: [
