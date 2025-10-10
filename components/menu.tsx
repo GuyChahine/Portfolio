@@ -38,10 +38,10 @@ export default function Menu() {
           <Link href="/projects" className="menu_link">
             Projects
           </Link>
-          <p className="menu_separator">|</p>
+          {/*<p className="menu_separator">|</p>
           <Link href="/contact" className="menu_link">
             Contact
-          </Link>
+          </Link>*/}
           <p className="menu_separator">|</p>
           <ThemeSwitch className="menu_link text-left text-lg box-content p-2 rounded-md hover:bg-secondary/10" />
         </div>
